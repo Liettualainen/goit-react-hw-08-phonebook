@@ -2,10 +2,10 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import {  ContactInputForm} from 'components/ContactInputForm/ContactInputForm';
-import { fetchTasks } from 'redux/tasks/operations';
-import { selectLoading } from 'redux/tasks/selectors';
+import { fetchTasks } from 'redux/contacts/operations';
+import { selectLoading } from 'redux/contacts/selectors';
 import { FilterContact } from 'components/Filter/Filter';
-import { selectAllTasks } from 'redux/tasks/selectors'
+import { selectAllTasks } from 'redux/contacts/selectors'
 
 import { Spinner } from '@chakra-ui/react';
 import { ToastContainer } from 'react-toastify';

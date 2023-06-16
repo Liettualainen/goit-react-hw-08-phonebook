@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { ContactsListForm} from '../ContactsListForm/ContactsListForm';
-import { selectFilteredContacts} from "redux/tasks/selectors";
+import { selectFilteredContacts} from "redux/contacts/selectors";
 import { FormLabel,} from '@chakra-ui/react'
 
 export const ContactList = () => {

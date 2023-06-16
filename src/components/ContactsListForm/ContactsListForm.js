@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { deleteTask } from 'redux/tasks/operations';
+import { deleteTask } from 'redux/contacts/operations';
 
 import { Button } from '@chakra-ui/react'
 import { Box, Text, Flex, Spacer, Container} from '@chakra-ui/react'

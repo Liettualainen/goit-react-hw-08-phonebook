@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import React from 'react';
-import { addTask } from "redux/tasks/operations";
-import { selectAllTasks } from 'redux/tasks/selectors';
+import { addTask } from "redux/contacts/operations";
+import { selectAllTasks } from 'redux/contacts/selectors';
 
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiOutlineUser } from 'react-icons/ai';
@@ -23,7 +23,7 @@ export const ContactInputForm = () => {
             contactName => contactName.name.toLowerCase() === name.toLowerCase());
 
         if (findTheSameName) {
-            form.reset();            
+            // form.reset();            
             return toast.error(`${name} is already in the contact list`, {
                         position: toast.POSITION.TOP_LEFT,
                         autoClose: 2000,

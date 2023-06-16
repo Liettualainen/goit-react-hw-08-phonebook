@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
@@ -29,7 +30,15 @@ export const logIn = createAsyncThunk(
             setAuthHeader(response.data.token);
             return response.data;
         } catch (error) {
-            return thunkAPI.rejectWithValue(error.message);
+            return (
+                // alert('Email or password incorrect'),
+                toast.error('Email or password incorrect', {
+                        position: toast.POSITION.TOP_LEFT,
+                        autoClose: 2000,
+                        pauseOnHover: true,
+                        draggable: true,
+                        }),
+                thunkAPI.rejectWithValue(error.message))
         }
     });
 

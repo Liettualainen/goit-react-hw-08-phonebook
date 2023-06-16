@@ -10,9 +10,9 @@ import {
     REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { tasksReducer } from './tasks/slice';
+import { tasksReducer } from './contacts/slice';
 import { authReducer } from './auth/slice';
-import { filterReducer } from 'redux/tasks/filterSlice';
+import { filterReducer } from 'redux/contacts/filterSlice';
 // import { getDefaultNormalizer } from "@testing-library/react";
 
 const middleware = [

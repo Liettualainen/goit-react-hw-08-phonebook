@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { findContact } from "redux/tasks/filterSlice";
-import { selectFilteredContacts } from 'redux/tasks/selectors'
+import { findContact } from "redux/contacts/filterSlice";
+import { selectFilteredContacts } from 'redux/contacts/selectors'
 import { ContactList } from 'components/ContactList/ContactList';
 
 import { ImSearch } from 'react-icons/im';

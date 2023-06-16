@@ -10,8 +10,8 @@ export const Navigation = () => {
         <Breadcrumb fontWeight='medium' fontSize='md'>
             <nav>
            <StyledLink  to="/">
-         Home
-         </StyledLink>
+         Home 
+                </StyledLink>
                 {isLoggedIn && (<StyledLink to="/phonebook">Phone Book
                 </StyledLink>)
                 }

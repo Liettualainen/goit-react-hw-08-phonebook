@@ -8,20 +8,19 @@ import { LockIcon, EmailIcon, } from '@chakra-ui/icons'
 
 export const LoginForm = () => {
     const dispatch = useDispatch();
-
-       const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
     const handleClick = () => setShow(!show)
     
     const handleSubmit = event => {
         event.preventDefault();
-        const form = event.currentTarget;
+        const form = event.currentTarget;        
         dispatch(
             logIn({
                 email: form.elements.email.value,
                 password: form.elements.password.value,
             })
         );
-        form.reset();
+        // form.reset();
     };
     return (
         <FormControl>
