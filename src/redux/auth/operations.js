@@ -20,7 +20,7 @@ export const register = createAsyncThunk('auth/register', async (credentials, th
         } catch (error) {
             return (
                   // alert('Email or password incorrect'),
-                toast.error('You have arlready registered Please Log_in', {
+                toast.error('The user have already registered', {
                         position: toast.POSITION.TOP_LEFT,
                         autoClose: 2000,
                         pauseOnHover: true,
