@@ -46,16 +46,11 @@ export const App = () => {
                 <PrivateRoute redirectTo="/login" component={<PhoneBookPage />} />
             }
           />
-          
           <Route
             path="*"
             element={<RestrictedRoute redirectTo="/notfound" component={<NotFound />}  />}
           />
         </Route>
-   
-
-
-
       </Routes>
   );
 };
