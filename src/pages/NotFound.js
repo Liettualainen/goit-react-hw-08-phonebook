@@ -1,16 +1,21 @@
-
 import { StyledLink } from '../components/Navigation/Navigation.styled';
 import { Breadcrumb } from '@chakra-ui/react';
-import { Alert, AlertTitle, AlertIcon } from "@chakra-ui/alert"
-import {Flex, Box} from "@chakra-ui/react";
+import { Alert, AlertTitle, AlertIcon } from "@chakra-ui/alert";
+import { Flex, Box } from "@chakra-ui/react";
+
+import { Helmet } from 'react-helmet';
 
 
 
 export default function NotFound() {
 
   return (
-
     <Breadcrumb fontWeight='medium' fontSize='md'>
+      <Helmet>
+            <title>Page not found</title>
+      </Helmet>
+      
+  
       <Flex display='flex'
         flexDirection='column'
         alignItems='center'
@@ -54,5 +59,5 @@ export default function NotFound() {
         </nav>
 
       </Flex>
-    </Breadcrumb>
-)}
+    </Breadcrumb>) 
+}

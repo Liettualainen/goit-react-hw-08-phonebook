@@ -48,7 +48,7 @@ export const App = () => {
           />
           <Route
             path="*"
-            element={<RestrictedRoute redirectTo="/notfound" component={<NotFound />}  />}
+            element={<NotFound />}
           />
         </Route>
       </Routes>
