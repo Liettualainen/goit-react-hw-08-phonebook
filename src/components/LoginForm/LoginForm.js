@@ -32,7 +32,7 @@ export const LoginForm = () => {
                     <EmailIcon />
                     </InputLeftAddon>
                                     <Input
-                    width='300px'
+                    width='370px'
                     variant='outline'
                     placeholder='enter your email'
                     size='md'

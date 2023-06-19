@@ -35,7 +35,7 @@ export const RegisterForm = () => {
                     <AiOutlineUser size='20px'  color='black'  />
                     </InputLeftAddon>
                      <Input
-                    width='300px'
+                    width='370px'
                     variant='outline'
                     placeholder='enter your nickname'
                     size='md'
@@ -52,7 +52,7 @@ export const RegisterForm = () => {
                     </InputLeftAddon>
                 <Input
                    
-                    width='300px'
+                    width='370px'
                     variant='outline'
                     placeholder='enter your email'
                     size='md'
