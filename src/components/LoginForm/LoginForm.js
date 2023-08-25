@@ -5,7 +5,6 @@ import { logIn } from 'redux/auth/operations';
 import {FormControl,FormLabel, Input, InputLeftAddon, InputRightAddon, InputGroup , Button} from '@chakra-ui/react'
 import { LockIcon, EmailIcon, } from '@chakra-ui/icons'
 
-
 export const LoginForm = () => {
     const dispatch = useDispatch();
     const [show, setShow] = useState(false);
@@ -24,46 +23,43 @@ export const LoginForm = () => {
     };
     return (
         <FormControl>
-            <form onSubmit={handleSubmit} autoComplete="off">
-       
+        <form onSubmit={handleSubmit} autoComplete="off">
                 <FormLabel marginTop='10px'>Email:</FormLabel>
                 <InputGroup size='md' >
                     <InputLeftAddon justifyContent='center' marginLeft='100px'width='4.5rem'>
                     <EmailIcon />
                     </InputLeftAddon>
-                                    <Input
+                    <Input
                     width='370px'
                     variant='outline'
                     placeholder='enter your email'
                     size='md'
                     type="email"
-                    name="email" />
+                    name="email"
+                    />
                  </InputGroup>
-
                 <FormLabel marginTop='10px'>Password:</FormLabel>
                 <InputGroup size='md' >
-                     <InputLeftAddon justifyContent='center' marginLeft='100px'width='4.5rem'>
+                <InputLeftAddon justifyContent='center'
+                        marginLeft='100px' width='4.5rem'>
                     <LockIcon />
-                    </InputLeftAddon>
+                </InputLeftAddon>
                 <Input
                     width='300px'
                     variant='outline'
                     placeholder='enter the password'
                     size='md'
                     type={show ? 'text' : 'password'}
-                        name="password" />
-                    
-                            <InputRightAddon width='4.5rem'>
-                        <Button
-                            
-                            h='1.75rem'
-                            size='sm'
-                            onClick={handleClick}>
-                            {show ? 'Hide' : 'Show'}
-                        </Button>
+                    name="password" />
+                    <InputRightAddon width='4.5rem'>
+                <Button
+                    h='1.75rem'
+                    size='sm'
+                    onClick={handleClick}>
+                    {show ? 'Hide' : 'Show'}
+                </Button>
                 </InputRightAddon>    
-                    
-                    </InputGroup>
+                </InputGroup>
             <FormLabel>
                     <Button
                         marginLeft='0px'
@@ -71,9 +67,8 @@ export const LoginForm = () => {
                         type="submit"
                         colorScheme='blue'
                         size='md'>Log In</Button>
-                </FormLabel>
-                
-            </form>
+            </FormLabel>
+        </form>
         </FormControl>
     );
 };
